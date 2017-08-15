@@ -1,0 +1,30 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:id="@+id/ll_moved_view"
+    android:background="#FFFFFF"
+    android:paddingTop="25dp"
+    android:layout_gravity="right"
+    android:paddingRight="10dp"
+    android:paddingLeft="2dp"
+    android:paddingBottom="25dp"
+    android:orientation="horizontal"
+    android:layout_height="match_parent" >
+
+
+
+        <ImageView
+            android:layout_gravity="center_vertical"
+            android:id="@+id/iv_moved_view"
+            android:layout_width="20dp"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@drawable/icon_arrow_left" />
+        <TextView
+            android:gravity="center"
+            android:id="@+id/tv_moved_view"
+            android:layout_width="20dp"
+            android:textColor="#333333"
+            android:layout_height="match_parent"
+            android:text="查看更多" />
+
+</LinearLayout>

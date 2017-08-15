@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <pull_to_left.pull_to_left.PullToLeftRefreshLinearLayout
+            android:id="@+id/pull_group"
+        android:layout_toLeftOf="@+id/ll_moved_view"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <android.support.v7.widget.RecyclerView
+                android:scrollbars="none"
+                android:layout_toLeftOf="@+id/movedViewLayout"
+                android:background="#EEEEEE"
+                android:overScrollMode="never"
+                android:id="@+id/rv_hsv_type_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"></android.support.v7.widget.RecyclerView>
+
+            <pull_to_left.pull_to_left.MovedViewLayout
+                android:id="@+id/movedViewLayout"
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:layout_alignBottom="@+id/rv_hsv_type_content"
+                android:layout_height="match_parent"></pull_to_left.pull_to_left.MovedViewLayout>
+    </pull_to_left.pull_to_left.PullToLeftRefreshLinearLayout>
+
+
+
+</RelativeLayout>
